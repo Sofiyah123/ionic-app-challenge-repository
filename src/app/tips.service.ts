@@ -8,9 +8,9 @@ export class TipsService {
 
   constructor(private http: HttpClient) { }
   getLocalData() {
-    return this.http.get("/assets/data/dailyquotes.json");
+    return this.http.get("../assets/data/dailyquotes.json");
   }
   getRemoteData(){
-    return this.http.get("http://www.reddit.com/r/gifs/.json?limit");
+    return this.http.get("https://quota.glitch.me/random");
   }
 }
